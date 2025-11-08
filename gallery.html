@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Verdant & Velvet Flowers</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Georgia', serif;
+        color: #f3ead9;
+        background: linear-gradient(135deg, #4a1f1c, #a8b29e, #cfa544);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    header {
+        background: linear-gradient(to right, #4a1f1c, #cfa544);
+        padding: 25px 0;
+        text-align: center;
+        color: #f3ead9;
+        font-size: 2.5em;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    nav {
+        background: linear-gradient(to right, #cfa544, #a8b29e);
+        text-align: center;
+        padding: 14px 0;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+        color: #4a1f1c;
+        text-decoration: none;
+        margin: 0 25px;
+        font-weight: bold;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        transition: 0.3s ease-in-out;
+        display: inline-block;
+    }
+
+    nav a:hover {
+        color: #f3ead9;
+        text-shadow: 0 0 8px #f3ead9;
+    }
+
+    section {
+        padding: 50px 10%;
+        background: rgba(74, 31, 28, 0.85);
+        border-radius: 18px;
+        margin: 40px auto;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        text-align: center;
+    }
+
+    h2 {
+        color: #cfa544;
+        text-align: center;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        font-size: 1.8em;
+        text-shadow: 0 0 8px rgba(207, 165, 68, 0.4);
+        margin-bottom: 40px;
+        transition: 1s;
+    }
+
+    h2:hover {
+        transform: scale(1.05);
+    }
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+        background-color: #4a1f1c;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+        border-radius: 15px;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+        opacity: 0.85;
+    }
+
+    .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(74, 31, 28, 0.75);
+        color: #f3ead9;
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .gallery-item:hover .caption {
+        opacity: 1;
+    }
+
+    footer {
+        background: #4a1f1c;
+        color: #f3ead9;
+        text-align: center;
+        padding: 25px;
+        margin-top: 40px;
+        font-size: 0.95em;
+        letter-spacing: 1px;
+        box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 900px) {
+        header {
+            font-size: 2em;
+            padding: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            font-size: 1em;
+        }
+        section {
+            padding: 40px 6%;
+        }
+        .gallery-container {
+            gap: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        nav {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 8px 0;
+        }
+        section {
+            padding: 30px 5%;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        .caption {
+            font-size: 0.9em;
+        }
+    }
+
+    @media (max-width: 400px) {
+        header {
+            font-size: 1.6em;
+        }
+        nav a {
+            font-size: 0.95em;
+        }
+        footer {
+            font-size: 0.8em;
+            padding: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+<header>Verdant & Velvet Flowers</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section id="gallery">
+    <h2>Our Gallery</h2>
+    <p>A glimpse into the artistry and beauty of our floral creations — every bloom crafted with love and care.</p>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="flower_7.jpg" alt="Rose Arrangement">
+            <div class="caption">Classic Rose Arrangement</div>
+        </div>
+        <div class="gallery-item">
+            <img src="flower_8.jpg" alt="Wedding Bouquet">
+            <div class="caption">Bridal Bouquet</div>
+        </div>
+        <div class="gallery-item">
+            <img src="flower_9.jpg" alt="Table Centerpiece">
+            <div class="caption">Table Centerpiece</div>
+        </div>
+        <div class="gallery-item">
+            <img src="flower_10.jpg" alt="Bloom Box">
+            <div class="caption">Bloom Box of Elegance</div>
+        </div>
+        <div class="gallery-item">
+            <img src="flower_11.jpg" alt="Tropical Mix">
+            <div class="caption">Tropical Paradise</div>
+        </div>
+        <div class="gallery-item">
+            <img src="flower_12.jpg" alt="Pastel Theme">
+            <div class="caption">Pastel Serenity</div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        console.log("Gallery Page Initialized 🌸");
+    });
+</script>
+
+<footer>
+    © 2025 Verdant & Velvet Flowers — Where Petals Speak Elegance.
+</footer>
+</body>
+</html>

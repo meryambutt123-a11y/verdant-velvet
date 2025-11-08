@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Verdant & Velvet Flowers</title>
+<style>
+    /* Base Styles */
+    body {
+        margin: 0;
+        font-family: 'Georgia', serif;
+        color: #f3ead9;
+        background: linear-gradient(135deg, #4a1f1c, #a8b29e, #cfa544);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    header {
+        background: linear-gradient(to right, #4a1f1c, #cfa544);
+        padding: 25px 0;
+        text-align: center;
+        color: #f3ead9;
+        font-size: 2.5em;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    /* Navigation Bar */
+    nav {
+        background: linear-gradient(to right, #cfa544, #a8b29e);
+        text-align: center;
+        padding: 14px 0;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+        color: #4a1f1c;
+        text-decoration: none;
+        margin: 0 25px;
+        font-weight: bold;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        transition: 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+        color: #f3ead9;
+        text-shadow: 0 0 8px #f3ead9;
+    }
+
+    /* Sections */
+    section {
+        padding: 50px 15%;
+        background: rgba(74, 31, 28, 0.85);
+        border-radius: 18px;
+        margin: 40px auto;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        max-width: 1000px;
+    }
+
+    h2 {
+        color: #cfa544;
+        text-align: center;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        font-size: 2em;
+        text-shadow: 0 0 8px rgba(207,165,68,0.4);
+        transition: 2s;
+    }
+
+    h2:hover {
+        font-size: 50px;
+        transform: translate(50px, 20px);
+    }
+
+    p {
+        line-height: 1.9;
+        text-align: justify;
+        color: #f3ead9;
+        font-size: 1.05em;
+        margin-top: 10px;
+    }
+
+    footer {
+        background: #4a1f1c;
+        color: #f3ead9;
+        text-align: center;
+        padding: 25px;
+        margin-top: 40px;
+        font-size: 0.95em;
+        letter-spacing: 1px;
+        box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        section {
+            padding: 40px 10%;
+        }
+        header {
+            font-size: 2.2em;
+        }
+    }
+
+    @media (max-width: 768px) {
+        header {
+            font-size: 1.8em;
+            padding: 20px 0;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 10px 12px;
+            font-size: 1em;
+        }
+
+        section {
+            padding: 35px 8%;
+            margin: 25px 6%;
+        }
+
+        h2 {
+            font-size: 1.6em;
+        }
+
+        h2:hover {
+            font-size: 1.6em;
+            transform: none;
+        }
+
+        p {
+            font-size: 1em;
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 480px) {
+        nav a {
+            display: block;
+            margin: 8px 0;
+            font-size: 0.95em;
+        }
+
+        section {
+            padding: 25px 6%;
+        }
+
+        h2 {
+            font-size: 1.4em;
+        }
+
+        p {
+            font-size: 0.95em;
+        }
+
+        footer {
+            font-size: 0.85em;
+            padding: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>Verdant & Velvet Flowers</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>Verdant & Velvet Flowers</strong> — where every bloom tells a story. Inspired by the elegance of vintage floristry and the freshness of the modern world, our arrangements are crafted to stir emotions and breathe life into every space. Each petal, each color, is a reflection of our passion for nature’s timeless beauty.</p>
+
+    <p>Founded in 2012, we’ve grown from a small neighborhood shop into a boutique that’s loved for its charm and authenticity. Whether it’s an intimate wedding, a thoughtful gift, or a grand celebration, our floral designs blend sophistication with heart — capturing the perfect balance between verdant life and velvety grace.</p>
+</section>
+
+<section id="values">
+    <h2>Our Values</h2>
+    <p>At <em>Verdant & Velvet</em>, we believe in craftsmanship, sincerity, and sustainability. Every creation is assembled by hand, using responsibly sourced blooms that echo both tradition and artistry. Our goal is simple — to make your moments unforgettable through the silent poetry of flowers.</p>
+</section>
+
+<section id="contact">
+    <h2>Visit Us</h2>
+    <p style="text-align:center;">
+        📍 27 Rosewood Lane, Faisalabad<br>
+        ☎️ +92 300 4567890<br>
+        🕰️ Mon - Sat: 9 AM - 8 PM
+    </p>
+</section>
+
+<footer>
+    © 2025 Verdant & Velvet Flowers — Where Petals Speak Elegance.
+</footer>
+
+</body>
+</html>

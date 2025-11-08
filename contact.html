@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us - Verdant & Velvet Flowers</title>
+	<style>
+		/* General Styling */
+		body {
+			margin: 0;
+			font-family: 'Georgia', serif;
+			color: #f3ead9;
+			background: linear-gradient(135deg, #4a1f1c, #a8b29e, #cfa544);
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+		header {
+			background: linear-gradient(to right, #4a1f1c, #cfa544);
+			padding: 25px 0;
+			text-align: center;
+			color: #f3ead9;
+			font-size: 2.5em;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+		}
+
+		/* Navigation */
+		nav {
+			background: linear-gradient(to right, #cfa544, #a8b29e);
+			text-align: center;
+			padding: 14px 0;
+			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		nav a {
+			color: #4a1f1c;
+			text-decoration: none;
+			margin: 0 20px;
+			font-weight: bold;
+			font-size: 1.1em;
+			letter-spacing: 1px;
+			transition: 0.3s ease-in-out;
+		}
+
+		nav a:hover {
+			color: #f3ead9;
+			text-shadow: 0 0 8px #f3ead9;
+		}
+
+		/* Section */
+		section {
+			padding: 50px 10%;
+			background: rgba(74, 31, 28, 0.85);
+			border-radius: 18px;
+			margin: 40px auto;
+			box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+			max-width: 900px;
+		}
+
+		h2 {
+			color: #cfa544;
+			text-align: center;
+			font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+			font-size: 2em;
+			text-shadow: 0 0 8px rgba(207, 165, 68, 0.4);
+			margin-bottom: 10px;
+		}
+
+		p {
+			text-align: center;
+			line-height: 1.6em;
+			font-size: 1.1em;
+		}
+
+		/* Form Styling */
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			max-width: 600px;
+			margin: 30px auto;
+		}
+
+		input, textarea {
+			padding: 12px;
+			border: none;
+			border-radius: 8px;
+			font-size: 1em;
+			font-family: inherit;
+			background-color: #f3ead9;
+			color: #4a1f1c;
+		}
+
+		input:focus, textarea:focus {
+			outline: 2px solid #cfa544;
+			background-color: #fffaf1;
+		}
+
+		button {
+			padding: 12px;
+			background: linear-gradient(to right, #cfa544, #a8b29e);
+			color: #4a1f1c;
+			border: none;
+			border-radius: 8px;
+			font-size: 1.1em;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.3s ease-in-out;
+		}
+
+		button:hover {
+			background: linear-gradient(to right, #a8b29e, #cfa544);
+			color: #f3ead9;
+			text-shadow: 0 0 5px #f3ead9;
+		}
+
+		/* Contact Info */
+		.contact-info {
+			text-align: center;
+			margin-top: 40px;
+		}
+
+		.contact-info p {
+			font-size: 1.05em;
+			line-height: 1.8em;
+		}
+
+		/* Footer */
+		footer {
+			background: #4a1f1c;
+			color: #f3ead9;
+			text-align: center;
+			padding: 25px;
+			margin-top: 40px;
+			font-size: 0.95em;
+			letter-spacing: 1px;
+			box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
+		}
+
+		/* Responsive Design */
+		@media (max-width: 768px) {
+			header {
+				font-size: 1.8em;
+				padding: 20px 0;
+			}
+
+			nav a {
+				display: inline-block;
+				margin: 10px 12px;
+				font-size: 1em;
+			}
+
+			section {
+				padding: 30px 6%;
+				margin: 25px 5%;
+			}
+
+			h2 {
+				font-size: 1.6em;
+			}
+
+			p, .contact-info p {
+				font-size: 1em;
+			}
+
+			form {
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 480px) {
+			nav a {
+				display: block;
+				margin: 8px 0;
+				font-size: 0.95em;
+			}
+
+			h2 {
+				font-size: 1.4em;
+			}
+
+			form input, form textarea, button {
+				font-size: 0.95em;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>Verdant & Velvet Flowers</header>
+
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+
+	<section id="contact">
+		<h2>Contact Us</h2>
+		<p>We’d love to hear from you! Whether you have a question, want to place a custom order, or simply want to share your floral dreams — we’re just a message away.</p>
+
+		<form id="contactForm">
+			<input type="text" name="name" placeholder="Your Name" required>
+			<input type="email" name="email" placeholder="Your Email" required>
+			<input type="text" name="subject" placeholder="Subject" required>
+			<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+			<button type="submit">Send Message</button>
+		</form>
+
+		<div class="contact-info">
+			<p><strong>Address:</strong> 123 Bloom Street, Garden View, Lahore, Pakistan</p>
+			<p><strong>Phone:</strong> +92 300 1234567</p>
+			<p><strong>Email:</strong> contact@verdantvelvet.com</p>
+			<p>We’re open Monday to Saturday, 11:00 AM – 8:00 PM</p>
+		</div>
+	</section>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const form = document.getElementById("contactForm");
+			form.addEventListener("submit", (event) => {
+				event.preventDefault();
+				const name = form.name.value.trim();
+				const email = form.email.value.trim();
+				if (!name || !email) {
+					alert("Please fill out all required fields.");
+					return;
+				}
+				alert(`Thank you, ${name}! Your message has been sent successfully.`);
+				form.reset();
+			});
+		});
+	</script>
+
+	<footer>
+		© 2025 Verdant & Velvet Flowers — Where Petals Speak Elegance.
+	</footer>
+</body>
+</html>
